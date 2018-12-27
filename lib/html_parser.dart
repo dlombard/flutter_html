@@ -638,6 +638,7 @@ class HtmlParser {
         case "strong":
           return DefaultTextStyle.merge(
             child: Wrap(
+              alignment: WrapAlignment.center,
               children: _parseNodeList(node.nodes),
             ),
             style: const TextStyle(
