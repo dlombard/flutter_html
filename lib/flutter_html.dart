@@ -13,7 +13,7 @@ class Html extends StatelessWidget {
     this.onLinkTap,
     this.renderNewlines = false,
     this.customRender,
-    this.alignment
+    this.alignment = WrapAlignment.center
   }) : super(key: key);
 
   final String data;
@@ -38,7 +38,7 @@ class Html extends StatelessWidget {
       child: DefaultTextStyle.merge(
         style: defaultTextStyle,
         child: Wrap(
-          alignment: alignment != null ? alignment: WrapAlignment.start,
+          alignment: alignment ,
           children: HtmlParser(
             width: width,
             onLinkTap: onLinkTap,
