@@ -751,9 +751,9 @@ class HtmlParser {
       //Temp fix for https://github.com/flutter/flutter/issues/736
       if (finalText.endsWith(" ")) {
         return Container(
-            padding: EdgeInsets.only(right: 2.0), child: Text(finalText));
+            padding: EdgeInsets.only(right: 2.0), child: Text(finalText, textAlign: TextAlign.center,));
       } else {
-        return Text(finalText);
+        return Text(finalText, textAlign: TextAlign.center,);
       }
     }
     return Wrap();
