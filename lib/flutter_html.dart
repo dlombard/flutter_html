@@ -14,7 +14,7 @@ class Html extends StatelessWidget {
     this.renderNewlines = false,
     this.customRender,
     this.alignment = WrapAlignment.center,
-    this.containerAlignment = Alignment.center
+    this.containerAlignment = Alignment.topCenter
   }) : super(key: key);
 
   final String data;
@@ -42,7 +42,6 @@ class Html extends StatelessWidget {
         style: defaultTextStyle,
         child: Wrap(
           alignment: alignment ,
-          crossAxisAlignment: WrapCrossAlignment.center,
           children: HtmlParser(
             width: width,
             onLinkTap: onLinkTap,
