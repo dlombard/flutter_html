@@ -37,7 +37,7 @@ class Html extends StatelessWidget {
       padding: padding,
       color: backgroundColor,
       width: width,
-      containerAlignment: containerAlignment,
+      alignment: containerAlignment,
       child: DefaultTextStyle.merge(
         style: defaultTextStyle,
         child: Wrap(
