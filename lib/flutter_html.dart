@@ -42,6 +42,7 @@ class Html extends StatelessWidget {
         style: defaultTextStyle,
         child: Wrap(
           alignment: alignment ,
+          crossAxisAlignment: WrapCrossAlignment.center,
           children: HtmlParser(
             width: width,
             onLinkTap: onLinkTap,
