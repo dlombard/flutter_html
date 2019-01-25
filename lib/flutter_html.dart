@@ -14,7 +14,8 @@ class Html extends StatelessWidget {
     this.renderNewlines = false,
     this.customRender,
     this.alignment = WrapAlignment.center,
-    this.containerAlignment = Alignment.topCenter
+    this.containerAlignment = Alignment.topCenter,
+    this.runAlignment
   }) : super(key: key);
 
   final String data;
@@ -25,6 +26,7 @@ class Html extends StatelessWidget {
   final bool renderNewlines;
   final WrapAlignment alignment;
   final Alignment containerAlignment;
+  final WrapAlignment runAlignment;
   /// Either return a custom widget for specific node types or return null to
   /// fallback to the default rendering.
   final CustomRender customRender;
@@ -41,6 +43,7 @@ class Html extends StatelessWidget {
       child: DefaultTextStyle.merge(
         style: defaultTextStyle,
         child: Wrap(
+          runAlignment: runAlignment,
           alignment: alignment ,
           crossAxisAlignment: WrapCrossAlignment.center,
           children: HtmlParser(
