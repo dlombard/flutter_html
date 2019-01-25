@@ -550,6 +550,8 @@ class HtmlParser {
               width: width,
               child: Wrap(
                 children: _parseNodeList(node.nodes),
+                alignment: WrapAlignment.center,	
+                crossAxisAlignment: WrapCrossAlignment.center,
               ),
             ),
           );
