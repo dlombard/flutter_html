@@ -15,7 +15,7 @@ class Html extends StatelessWidget {
     this.customRender,
     this.alignment = WrapAlignment.center,
     this.containerAlignment = Alignment.topCenter,
-    this.runAlignment
+    this.runAlignment = WrapAlignment.start
   }) : super(key: key);
 
   final String data;
